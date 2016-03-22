@@ -1,0 +1,8 @@
+{
+"variants" : {
+"facing=north": {"model": "ts:spruce_wood_box", "y": 270},
+"facing=south": {"model": "ts:spruce_wood_box", "y": 90},
+"facing=east": {"model": "ts:spruce_wood_box"},
+"facing=west": {"model": "ts:spruce_wood_box", "y": 180}    
+}
+}

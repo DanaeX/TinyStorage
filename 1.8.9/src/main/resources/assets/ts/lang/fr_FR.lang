@@ -1,0 +1,8 @@
+item.item_acacia_wood_box.name=Boîte en bois (Acacia)
+item.item_spruce_wood_box.name=Boîte en bois (Sapin)
+item.item_oak_wood_box.name=Boîte en bois (Chêne)
+item.item_birch_wood_box.name=Boîte en bois (Bouleau)
+item.item_jungle_wood_box.name=Boîte en bois (Acajou)
+item.item_dark_oak_wood_box.name=Boîte en bois (Chêne noir)
+
+itemGroup.tabTinyStorage=Tiny Storage

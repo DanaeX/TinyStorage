@@ -1,0 +1,8 @@
+item.item_spruce_wood_box.name=Wood Box (Spruce)
+item.item_acacia_wood_box.name=Wood Box (Acacia)
+item.item_birch_wood_box.name=Wood Box (Birch)
+item.item_jungle_wood_box.name=Wood Box (Jungle)
+item.item_oak_wood_box.name=Wood Box (Oak)
+item.item_dark_oak_wood_box.name=Wood Box (Dark Oak)
+
+itemGroup.tabTinyStorage=Tiny Storage

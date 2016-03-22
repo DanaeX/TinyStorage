@@ -1,0 +1,8 @@
+{
+"variants" : {
+"facing=north": {"model": "ts:oak_wood_box", "y": 270},
+"facing=south": {"model": "ts:oak_wood_box", "y": 90},
+"facing=east": {"model": "ts:oak_wood_box"},
+"facing=west": {"model": "ts:oak_wood_box", "y": 180}    
+}
+}
