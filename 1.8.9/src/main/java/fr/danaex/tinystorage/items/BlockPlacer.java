@@ -1,5 +1,6 @@
 package fr.danaex.tinystorage.items;
 
+import fr.danaex.tinystorage.blocks.WoodBox;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSnow;
 import net.minecraft.block.state.IBlockState;
@@ -12,6 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.world.World;
+import net.minecraft.world.storage.WorldInfo;
 
 public class BlockPlacer extends Item {
 	
@@ -61,7 +63,7 @@ public class BlockPlacer extends Item {
 			if (world.canBlockBePlaced(this.block, pos, false, side, (Entity) null, stack)) {
 
 				IBlockState iblockstate = this.block.onBlockPlaced(world, pos, side, hitX, hitY, hitZ, 0, player);
-
+				
 				if (world.setBlockState(pos, iblockstate, flag)) {
 
 					iblockstate = world.getBlockState(pos);

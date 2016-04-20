@@ -23,6 +23,16 @@ public class StorageBox extends Block {
 	}
 	
 	@Override
+	public IBlockState onBlockPlaced(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ,
+			int meta, EntityLivingBase placer) {
+
+		IBlockState state = super.onBlockPlaced(world, pos, facing, hitX, hitY, hitZ, meta, placer);
+		state = state.withProperty(FACING, placer.getHorizontalFacing());
+		return state;
+
+	}
+	
+	@Override
 	public boolean isFullCube() {
 		return false;
 	}
@@ -44,19 +54,15 @@ public class StorageBox extends Block {
 	}
 	
 	@Override
-	protected BlockState createBlockState()
+	public IBlockState getStateFromMeta(int meta)
 	{
-		return new BlockState(this, new IProperty[] { FACING });
+		return this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta));
 	}
 	
 	@Override
-	public IBlockState onBlockPlaced(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ,
-			int meta, EntityLivingBase placer) {
-
-		IBlockState state = super.onBlockPlaced(world, pos, facing, hitX, hitY, hitZ, meta, placer);
-		state = state.withProperty(FACING, placer.getHorizontalFacing());
-		return state;
-
+	protected BlockState createBlockState()
+	{
+		return new BlockState(this, new IProperty[] { FACING });
 	}
 
 }

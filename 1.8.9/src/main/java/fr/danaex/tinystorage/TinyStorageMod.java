@@ -1,9 +1,13 @@
 package fr.danaex.tinystorage;
 
+import fr.danaex.tinystorage.blocks.WoodBox;
 import fr.danaex.tinystorage.init.TinyStorageBlocks;
 import fr.danaex.tinystorage.init.TinyStorageItems;
 import fr.danaex.tinystorage.init.TinyStorageRecipes;
+import fr.danaex.tinystorage.init.TinyStorageTileEntities;
 import fr.danaex.tinystorage.proxy.CommonProxy;
+import net.minecraft.client.renderer.block.statemap.StateMap;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -22,6 +26,7 @@ public class TinyStorageMod {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		
+		
 		/* Registering Blocks and Items*/
 		TinyStorageBlocks.init();
 		TinyStorageItems.init();
@@ -30,6 +35,9 @@ public class TinyStorageMod {
 		
 		/* Registering Recipes */
 		TinyStorageRecipes.register();
+		
+		/* Registering Tile Entities */
+		TinyStorageTileEntities.register();
 		
 	}
 	
